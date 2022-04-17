@@ -1,0 +1,25 @@
+{
+  "name": "oracledb-in-docker",
+  "version": "1.0.0",
+  "description": "This project is designed to run Oracle Database in docker container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericambiel/oracledb-in-docker.git"
+  },
+  "keywords": [
+    "oracle",
+    "oracledb",
+    "docker",
+    "container"
+  ],
+  "author": "Eric Ambiel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericambiel/oracledb-in-docker/issues"
+  },
+  "homepage": "https://github.com/ericambiel/oracledb-in-docker#readme"
+}
