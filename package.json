@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "make-docker-container": "docker-compose up -d",
+    "make-docker-container-dozzle":  "docker-compose  -f docker-compose-dozzle.yml up -d",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
