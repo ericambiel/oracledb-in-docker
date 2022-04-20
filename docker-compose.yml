@@ -9,11 +9,11 @@ services:
       - "5500:5500"
     volumes:
       # The data volume to use for the database. Has to be writable by the Unix "oracle" (uid: 54321) user inside the container!
-      - /opt/oracle/oradata:/home/ericambiel/Desktop/docker_volumes/$npm_package_name/oradata
+      - ~/Desktop/container_volumes/$npm_package_name/oradata:/opt/oracle/oradata
       # Optional: A volume with custom scripts to be run after database startup.
-#      - /opt/oracle/scripts/startup:/home/ericambiel/Desktop/docker_volumes/$name/startup
+#      - ~/Desktop/container_volumes/$npm_package_name/scripts/startup:/opt/oracle/scripts/startup
       # Optional: A volume with custom scripts to be run after database setup.
-#      - /opt/oracle/scripts/setup:/home/ericambiel/Desktop/docker_volumes/$name/setup
+#      - ~/Desktop/container_volumes/$npm_package_name/scripts/setup:/opt/oracle/scripts/setup
     environment:
       # The Oracle Database SID that should be used (default: ORCLCDB).
       - ORACLE_SID=ORCL
