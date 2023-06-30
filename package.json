@@ -1,12 +1,10 @@
 {
   "name": "oracledb-in-docker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This project is designed to run Oracle Database in docker container.",
-  "main": "index.js",
   "scripts": {
     "make-docker-container": "docker-compose up -d",
-    "make-docker-container-dozzle":  "docker-compose  -f docker-compose-dozzle.yml up -d",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "make-docker-container-dozzle":  "docker-compose  -f docker-compose-dozzle.yml up -d"
   },
   "repository": {
     "type": "git",

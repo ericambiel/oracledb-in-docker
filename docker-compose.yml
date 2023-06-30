@@ -3,13 +3,15 @@ services:
   oracle-db-enterprise:
     image: oracle-enterprise:19.3.0
     container_name: "oracle_enterprise"
-    restart: always
+    restart: 'no'
     ports:
       - "1521:1521"
       - "5500:5500"
     volumes:
       # The data volume to use for the database. Has to be writable by the Unix "oracle" (uid: 54321) user inside the container!
       - ~/Desktop/container_volumes/$npm_package_name/oradata:/opt/oracle/oradata
+      # Configured Directories by Oracle (e.g. Pump Directory)
+      - ~/Desktop/container_volumes/$npm_package_name/admin:/opt/oracle/admin/**/dpdump/
       # Optional: A volume with custom scripts to be run after database startup.
 #      - ~/Desktop/container_volumes/$npm_package_name/scripts/startup:/opt/oracle/scripts/startup
       # Optional: A volume with custom scripts to be run after database setup.
